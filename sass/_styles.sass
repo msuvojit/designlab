@@ -1,0 +1,202 @@
+@import "bourbon/bourbon"
+@import "../libs/bootstrap/bootstrap.min.css"
+@import "../libs/animate/animate.css"
+@import "../css/reset.css"
+@import "../css/component.css"
+
+
+
+.parallax-window
+	background: transparent
+
+body
+	font-family: "latoRegular", sans-serif
+	font-weight: normal
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	-webkit-font-smoothing: antialiased
+	overflow-x: hidden
+	text-align: center	
+	color: #3c3c3c
+	h3
+		font-family: "latoBold", sans-serif
+		font-size: em(34px)
+		letter-spacing: 5px
+		text-transform: uppercase
+	p
+		font-family: "latoLight", sans-serif
+		line-height: 26px
+	h6
+		font-family: "latoBold", sans-serif
+		font-size: em (24px)
+		text-transform: uppercase
+		letter-spacing: 2px
+
+
+.hidden
+	display: none
+
+
+header
+	background: url(../img/header_bg_1920.jpg) no-repeat
+	background-size: cover
+	position: relative
+	a
+		position: absolute
+		bottom: 2%
+
+.header_wrapper
+	display: table
+	width: 100%
+	height: 100%
+	position: absolute
+	top: 0
+	left: 0
+	.top_descr
+		display: table-row
+		.top_centered
+			display: table-cell
+			text-align: center
+			vertical-align: middle
+.top_text
+	max-width: 600px
+	display: inline-block
+	h1
+		font-family: "latoBold", sans-serif
+		font-size: em(54px)
+		color: #fff
+		text-transform: uppercase
+		letter-spacing: 5px
+		display: inline-block
+		text-shadow: 1px 1px 2px rgba(0,0,0,.5)
+		line-height: 65px
+		margin-bottom: 50px
+	h2
+		color: #fff
+		font-size: em(15px)
+		line-height: 29px
+		text-shadow: 1px 1px 2px rgba(0,0,0,.8)
+		text-transform: uppercase
+		letter-spacing: 1px
+
+.scroll
+	animation-duration: 2s
+	animation-iteration-count: infinite
+.work_item
+	img
+		animation-delay: .5s
+	h6
+		animation-delay: .6s
+	p
+		animation-delay: 1s
+.left_line,
+.right_line
+	background-color: #000
+	height: 2px
+	width: 240px
+	position: absolute
+.left_line
+	left: -2px
+	top: -2px
+
+.right_line
+	right: -2px
+	top: -2px
+
+.about_us
+	padding: 150px 0
+.wrapper_about_us
+	border: 2px #000 solid
+	border-top: none
+	padding: 6px 160px 60px
+	position: relative
+	p:nth-of-type(2)
+		margin: 30px 60px 0
+	h3
+		position: relative
+		bottom: 30px
+		background-color: #fff
+
+.services
+	padding: 150px 0
+	color: #fff
+	.wrapper_services
+		border: 2px #fff solid
+		border-top: none
+		padding: 6px 160px 60px
+		position: relative
+	.left_line,
+	.right_line
+		background-color: #fff
+	h3
+		position: relative
+		bottom: 30px
+
+.what_we_do
+	padding: 150px 0
+	.wrapper_what_we_do
+		border: 2px #000 solid
+		border-top: none			
+		padding: 76px 180px 0
+		position: relative
+	h3
+		position: relative
+		bottom: 100px
+.work_item
+	margin-bottom: 100px
+	img
+		margin-bottom: 30px
+		max-width: 128px
+	h6
+		margin-bottom: 30px
+	p
+		font-size: em(18px)
+
+.contact
+	padding: 150px 0
+	.wrapper_contact
+		border: 2px #000 solid
+		border-top: none			
+		padding: 6px 180px 0
+		position: relative
+	h3
+		position: relative
+		bottom: 30px
+	a
+		display: inline-block
+		border: 2px solid #3c3c3c
+		text-transform: uppercase
+		color: #fff
+		background-color: #3c3c3c
+		padding: 20px 130px
+		letter-spacing: 5px
+		margin: 50px 0
+		+transition(.77s all ease-out)
+		&:hover
+			text-decoration: none
+			color: #3c3c3c
+			background-color: #fff
+		&:focus
+			text-decoration: none
+
+footer
+	padding-bottom: 70px
+	font-size: em(14px)
+
+
+.grid
+	li
+		position: relative
+	.bg_opa
+		position: absolute
+		top: 7px
+		bottom: 7px
+		left: 7px
+		right: 7px
+		background-color: rgba(#bac4d8, .5)
+		opacity: 1
+		+transition(.5s all)
+		&:hover
+			opacity: 0
